@@ -1,11 +1,5 @@
-{{#each data}}
 <div>
-    <p> {{this.images}}
-        name:{{this.name}}
-        description:{{this.description}}
-        tagline:{{this.tagline}}
-        food pairing:{{this.food_pairing}}
-        brewers tips:{{this.brewers_tips}}
-    </p>
+       {{#each responseFromAPI }}
+    {{> randomPartials }}
+    {{/each}}
 </div>
-{{/each}}
